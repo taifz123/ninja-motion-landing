@@ -109,7 +109,7 @@ export function TestimonialsSection() {
         <SectionReveal delay={600}>
           <div className="text-center mt-8">
             <a
-              href="https://google.com/maps/place/ninja+motion+therapies"
+              href="https://www.google.com/maps/place/ninja+motion+therapies"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-[#D4AF37] hover:text-[#D4AF37]/80 transition-colors"

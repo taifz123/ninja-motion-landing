@@ -1,13 +1,15 @@
 import { SectionReveal } from "@/components/SectionReveal";
+import { Instagram, Play, ArrowRight } from "lucide-react";
 
 const INSTAGRAM_URL = "https://www.instagram.com/ninjamotiontherapies_/";
+const INSTAGRAM_EMBED = "https://www.instagram.com/ninjamotiontherapies_/embed/";
 
 export function InstagramReelSection() {
   return (
-    <section id="instagram" className="py-24 md:py-32 bg-[#0D0C0A]">
+    <section id="instagram" className="py-20 md:py-28 bg-[#0D0C0A]">
       <div className="container">
         <SectionReveal>
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-10 md:mb-14">
             <div className="flex items-center justify-center gap-3 mb-4">
               <div className="w-8 h-px bg-[#D4AF37]" />
               <span
@@ -31,31 +33,53 @@ export function InstagramReelSection() {
         </SectionReveal>
 
         <SectionReveal delay={100}>
-          <div className="max-w-md mx-auto">
-            <div className="rounded border border-white/[0.06] bg-white/[0.02] overflow-hidden card-glow">
+          <div className="max-w-[420px] mx-auto px-4 sm:px-0">
+            <div className="rounded-lg border border-white/[0.08] bg-white/[0.02] overflow-hidden card-glow">
               <iframe
-                src="https://www.instagram.com/reel/ninjamotiontherapies_/embed/"
+                src={INSTAGRAM_EMBED}
                 className="w-full"
-                style={{ minHeight: "600px", border: "none" }}
+                style={{ minHeight: "480px", border: "none" }}
                 loading="lazy"
-                allowTransparency
-                allow="encrypted-media"
-                title="Ninja Motion Therapies Instagram Reel"
+                title="Ninja Motion Therapies on Instagram"
               />
             </div>
           </div>
         </SectionReveal>
 
-        <SectionReveal delay={200}>
-          <div className="text-center mt-10">
+        <SectionReveal delay={150}>
+          <div className="mt-10 max-w-md mx-auto px-4 sm:px-0">
             <a
               href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 border border-[#D4AF37]/40 text-[#D4AF37] font-semibold text-base rounded hover:border-[#D4AF37] hover:bg-[#D4AF37]/5 transition-all duration-300"
-              style={{ fontFamily: "var(--font-heading)" }}
+              className="group flex items-center gap-4 p-4 sm:p-5 rounded-lg border border-white/[0.08] bg-white/[0.02] hover:border-[#D4AF37]/40 hover:bg-[#D4AF37]/[0.03] transition-all duration-300"
             >
-              Follow @ninjamotiontherapies_
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#bc1888] flex items-center justify-center shrink-0">
+                <Instagram size={24} className="text-white" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm sm:text-base font-bold text-white truncate" style={{ fontFamily: "var(--font-heading)" }}>
+                  @ninjamotiontherapies_
+                </p>
+                <p className="text-xs sm:text-sm text-white/40 mt-0.5">
+                  Reels, tips & client transformations
+                </p>
+              </div>
+              <ArrowRight size={18} className="text-white/30 group-hover:text-[#D4AF37] transition-colors shrink-0" />
+            </a>
+          </div>
+        </SectionReveal>
+
+        <SectionReveal delay={200}>
+          <div className="text-center mt-8">
+            <a
+              href={INSTAGRAM_URL + "reels/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-[#D4AF37] hover:text-[#D4AF37]/80 transition-colors"
+            >
+              <Play size={14} className="fill-current" />
+              Watch all reels
             </a>
           </div>
         </SectionReveal>

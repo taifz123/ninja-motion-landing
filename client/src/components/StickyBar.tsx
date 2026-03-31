@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#";
+const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#!";
 
 export function StickyBar() {
   const [visible, setVisible] = useState(false);

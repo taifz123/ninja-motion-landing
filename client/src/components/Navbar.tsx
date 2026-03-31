@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
-const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#";
+const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#!";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

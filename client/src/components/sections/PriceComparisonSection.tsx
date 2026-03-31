@@ -1,7 +1,7 @@
 import { SectionReveal } from "@/components/SectionReveal";
 import { X, Check } from "lucide-react";
 
-const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#";
+const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#!";
 
 export function PriceComparisonSection() {
   return (

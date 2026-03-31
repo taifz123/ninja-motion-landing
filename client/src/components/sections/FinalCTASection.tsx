@@ -1,7 +1,7 @@
 import { SectionReveal } from "@/components/SectionReveal";
 
 const CTA_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663489521805/a3fMW8WJpn7z6Aotfi6UaX/cta-section-bg-PXpnthWQ5jBsH38YM33Mns.webp";
-const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#";
+const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#!";
 
 export function FinalCTASection() {
   return (

@@ -1,6 +1,6 @@
 import { SectionReveal } from "@/components/SectionReveal";
 
-const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#";
+const STRIPE_LINK = import.meta.env.VITE_STRIPE_PAYMENT_LINK || "#!";
 
 const STEPS = [
   { num: "01", title: "Buy the guide", desc: "You get instant access straight away. Instant PDF download after checkout." },
