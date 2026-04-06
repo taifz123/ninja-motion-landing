@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663489521805/a3fMW8WJpn7z6Aotfi6UaX/hero-bg-CCkKUhKHErarbRftLDPXZ3.webp";
-const BOOKING_URL = "https://www.ninjamotiontherapies.com.au";
+const BOOKING_URL = "https://www.ninjamotiontherapies.com";
 
 export function HeroSection() {
   const [loaded, setLoaded] = useState(false);
